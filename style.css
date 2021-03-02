@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'Open Sans', sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+ }
+ 
+ * {
+    font-family: myFirstFont;
+ }
