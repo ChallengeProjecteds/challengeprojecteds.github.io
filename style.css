@@ -2,4 +2,25 @@
 body {
     font-family: 'Open Sans',sans-serif;
     font-size: 20px;
+    background-image: url('https://images.wallpaperscraft.com/image/milky_way_starry_sky_galaxy_119519_1920x1080.jpg');
 }
+img {
+    border-radius: 50%;
+    }
+div{
+    font-size: 30px;
+    text-align: center;
+}
+
+#oneri{
+    color: red;
+}
+
+p{
+    color: white;
+}
+
+#head{
+    text-align: center;
+}
+
