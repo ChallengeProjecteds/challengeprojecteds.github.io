@@ -11,3 +11,7 @@ function youshuf(){
     window.open("https://github.com/Yusuf-HE");
 
 }
+
+function berkay(){
+    window.open("https://github.com/berkaydurur");
+}
