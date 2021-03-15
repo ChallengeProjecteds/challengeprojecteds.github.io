@@ -2,25 +2,42 @@
 body {
     font-family: 'Open Sans',sans-serif;
     font-size: 20px;
-    background-image: url('https://images.wallpaperscraft.com/image/milky_way_starry_sky_galaxy_119519_1920x1080.jpg');
-}
-img {
-    border-radius: 50%;
-    }
-div{
-    font-size: 30px;
-    text-align: center;
+    background-image: url(https://cdn.discordapp.com/attachments/663807682485944354/821040962729279570/mature-detective.jpg);
+    background-repeat: no-repeat, repeat;
+    background-size: cover;
 }
 
-#oneri{
-    color: red;
-}
 
-p{
-    color: white;
-}
 
 #head{
     text-align: center;
 }
+
+.mid {
+    text-align: center;
+    
+}
+#baslik{
+    font-size: 50px;
+    
+}
+
+#clo{
+    font-size: 30px;
+}
+
+#paragraf{
+    font-size: 25px;
+    display: inline-block;
+    width: 70%;
+}
+
+#copyright{
+    text-align: right;
+    position: absolute;
+    top: 94%;
+}
+
+
+
 
