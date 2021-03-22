@@ -5,9 +5,40 @@ body {
     background-image: url(https://cdn.discordapp.com/attachments/663807682485944354/821040962729279570/mature-detective.jpg);
     background-repeat: no-repeat, repeat;
     background-size: cover;
+    padding: 0%;
+    margin: 0%;
 }
 
+p{
+    margin: auto;
+}
 
+p#clo{
+    margin: 25px 0px;
+}
+
+nav{
+    height: 75px;
+    background-color: orangered;
+}
+
+.altKisim{
+    display: flex;
+    margin: 20px auto;
+    width: 85%;
+    height: 200px;
+    justify-content: space-between;
+}
+
+.kolon{
+    background-color: teal;
+    width: calc(50% - 10px);
+}
+
+article{
+    display:flex;
+    flex-direction:column;
+}
 
 #head{
     text-align: center;
@@ -35,7 +66,7 @@ body {
 #copyright{
     text-align: right;
     position: absolute;
-    top: 94%;
+    top:94%;
 }
 
 
