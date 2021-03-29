@@ -18,21 +18,44 @@ p#clo{
 }
 
 nav{
+	position: fixed;
     height: 75px;
     background-color: orangered;
+    display: flex;
+    justify-content: space-around;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index:100;
+}
+
+.anaMenu{
+    height: 55px;
+    width: 15%;
+    background-color: palegoldenrod;
+    align-items:center;
+    align-content: center;
+}
+
+.menuDevamı{
+    height: 55px;
+    width: 85%;
+    background-color: peru;
+    align-items:center;
+    align-content: center;
 }
 
 .altKisim{
     display: flex;
     margin: 20px auto;
-    width: 85%;
+    width: 70%;
     height: 200px;
     justify-content: space-between;
 }
 
 .kolon{
     background-color: teal;
-    width: calc(50% - 10px);
+    width: calc(33% - 10px);
 }
 
 article{
