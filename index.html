@@ -1,84 +1,96 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Web Project</title>
-<link rel="stylesheet" href="style.css">
+    <title>Web Project</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-193270154-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-193270154-1');
+    </script>
 </head>
 <body>
-<article>
-    <nav>
-        <div class="anaMenu">
-            <h1 style="text-align: center; margin: 15px 0px;"><b>©Logic</b></h1>
-        </div>
-        <div class="menuDevamı">
-            <div class="wrap">
-                <div class="search">
-                   <input type="text" class="searchTerm" placeholder="What are you looking for?">
-                   <button type="submit" class="searchButton">
-                     <i class="fa fa-search"></i>
-                  </button>
+    <button class="DM">Dark Mode</button>
+    <article>
+        <nav>
+            <div class="anaMenu">
+                <h1 style="text-align: center; margin: 15px 0px;"><b>©Logic</b></h1>
+            </div>
+            <div class="menuDevamı">
+                <div class="wrap">
+                    <div class="search">
+                    <input type="text" class="searchTerm" placeholder="What are you looking for?">
+                    <button type="submit" class="searchButton">
+                        <i class="fa fa-search"></i>
+                    </button>
+                    </div>
                 </div>
-             </div>
-             
+                
+            </div>
+        </nav>
+        <br>
+        <br>
+        <br>
+        <h1 id="head" style="color: black;">Group 2</h1>
+        <div class="mid">
+            <p id="baslik" > <strong> Etkinlik izleme ve takip websitesi.</strong></p>
+            <p id="clo">
+                by CLogic
+            </p>
+            <p id="paragraf">
+                Farklı alanlardaki konferans ve yarışmaları düzenleyebilmenize, takip etmenize ve daha çok insana ulaşmanıza olanak sağlayacak bir platform.
+            </p>
         </div>
-    </nav>
-    <br>
-    <br>
-    <br>
-    <h1 id="head" style="color: black;">Group 2</h1>
-    <div class="mid">
-        <p id="baslik" > <strong> Etkinlik izleme ve takip websitesi.</strong></p>
-        <p id="clo">
-            by CLogic
-        </p>
-        <p id="paragraf">
-            Farklı alanlardaki konferans ve yarışmaları düzenleyebilmenize, takip etmenize ve daha çok insana ulaşmanıza olanak sağlayacak bir platform.
-        </p>
-    </div>
 
-    <div class="altKisim">
-        <div class="kolon">
-            <p><b>Poetry & the Creative Mind — Virtual Gala Supporting National Poetry Month</b></p>
-            <p>Fri, Apr 30, 2021 2:30 AM +03</p>
+        <div class="altKisim">
+            <div class="kolon">
+                <p><b>Poetry & the Creative Mind — Virtual Gala Supporting National Poetry Month</b></p>
+                <p>Fri, Apr 30, 2021 2:30 AM +03</p>
+            </div>
+            <div class="kolon">
+                <p><b>Vegan For Beginners</b></p>
+                <p>Sun, Apr 18, 2021 12:00 AM +03 + 11 more events</p>
+            </div>
+            <div class="kolon">
+                <p><b>The 2nd Annual National Antiracist Book Festival</b></p>
+                <p>Sat, Apr 24, 2021 4:00 PM +03</p>
+            </div>
         </div>
-        <div class="kolon">
-            <p><b>Vegan For Beginners</b></p>
-            <p>Sun, Apr 18, 2021 12:00 AM +03 + 11 more events</p>
+        
+        <div class="altKisim">
+            <div class="kolon">
+                <p><b>Barnes & Noble welcomes Barack Obama to virtually discuss A PROMISED LAND</b></p>
+                <p>Tue, Mar 30, 2021 2:00 AM +03</p>
+            </div>
+            <div class="kolon">
+                <p><b>48 hours of Bite Sized Mindfulness</b></p>
+                <p>Sat, Apr 3, 2021 11:00 AM +03 + 1 more event</p>
+            </div>
+            <div class="kolon">
+                <p><b>Les RH hackent le digital - Edition 2021</b></p>
+                <p>Thu, Apr 1, 2021 10:00 AM +03</p>
+            </div>
         </div>
-        <div class="kolon">
-            <p><b>The 2nd Annual National Antiracist Book Festival</b></p>
-            <p>Sat, Apr 24, 2021 4:00 PM +03</p>
-        </div>
-    </div>
-    
-    <div class="altKisim">
-        <div class="kolon">
-            <p><b>Barnes & Noble welcomes Barack Obama to virtually discuss A PROMISED LAND</b></p>
-            <p>Tue, Mar 30, 2021 2:00 AM +03</p>
-        </div>
-        <div class="kolon">
-            <p><b>48 hours of Bite Sized Mindfulness</b></p>
-            <p>Sat, Apr 3, 2021 11:00 AM +03 + 1 more event</p>
-        </div>
-        <div class="kolon">
-            <p><b>Les RH hackent le digital - Edition 2021</b></p>
-            <p>Thu, Apr 1, 2021 10:00 AM +03</p>
-        </div>
-    </div>
 
-    <div class="footer">
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <p>© 2021 CLogic inc.</p>
-    </div>
+        <div class="footer">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <p>© 2021 CLogic inc.</p>
+        </div>
 
-</article>
+    </article>
 </body>
 </html>
