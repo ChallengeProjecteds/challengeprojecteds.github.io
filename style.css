@@ -8,9 +8,24 @@ body {
     background-size: cover;
     padding: 0%;
     margin: 0%;
+    width: 100%;
+    height: 1100px;
     background-blend-mode: hard-light;
 }
+.baslik
+{
+    color: #3e6ce2;
+    position: relative;
+    font-size: 200% ;
+    text-align: center;
+    margin: 20px ;
+    font-family:'Comfortaa', cursive;;
+}
 
+#baslik
+{
+    transition: 0.5s;
+}
 p{
     margin: auto;
 }
@@ -19,33 +34,84 @@ p#clo{
     margin: 25px 0px;
 }
 
-nav{
-	position: fixed;
-    height: 75px;
-    background-color: orangered;
+header
+{
+    position: fixed;
+    height: 80px;
+    background-color: #3e6ce2;
     display: flex;
-    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: inherit;
+    align-items: flex-end;
     top: 0px;
     left: 0px;
     right: 0px;
     z-index:100;
 }
 
+nav{
+    position: fixed;
+    height: 35px;
+    background-color: #3e6ce2;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: inherit;
+    align-items: flex-end;
+    top: 80px;
+    left: 0px;
+    right: 0px;
+    z-index:100;
+}
+
+section
+{
+    position: absolute;
+    top: 165px;
+    height: 200px;
+}
+
+article
+{
+    position: absolute;
+    top: 540px;
+}
+
+footer
+{
+    position: absolute;
+    top: 1040px;
+    height: 100px;
+    width: 100%;
+    background-color: #3e6ce2;
+    color: blanchedalmond;
+    padding: 15px;
+    font-size: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
 .anaMenu{
-    height: 55px;
-    width: 15%;
-    background-color: palegoldenrod;
-    align-items:center;
+    height: 80px;
+    width: 20%;
+    background-color: #ffffff;
+    align-items: center;
     align-content: center;
 }
 
 .menuDevamı{
-    height: 55px;
-    width: 85%;
-    background-color: peru;
+    height: 80px;
+    width: 80%;
+    background-color: #ffffff;
     align-items:center;
     align-content: center;
 }
+.fa-search{
+    color: #5AB9EA;
+}
+
 
 .altKisim{
     display: flex;
@@ -77,7 +143,7 @@ article{
     text-align: center;
     
 }
-#baslik{
+.alt-baslik{
     font-size: 50px;
     
 }
@@ -86,17 +152,6 @@ article{
     font-size: 30px;
 }
 
-.DM{
-    background-color: darkblue;
-    color: white;
-    border: none;
-    position: fixed;
-    right: 0;
-    top: 0;
-    width: 50px;
-    height: 50px;
-    z-index:101;
-}
 
 #paragraf{
     font-size: 25px;
@@ -104,22 +159,66 @@ article{
     width: 70%;
 }
 
-.footer{
-    background-color: #120963;
-    color: blanchedalmond;
-    padding: 15px;
-    font-size: 16px;
+#DM{
+    background-color: rgb(255, 255, 255);
+    color: #3e6ce2;
+    font-family: 'Roboto', sans-serif;
+    font-size: 100%;
+    font-weight: bold;
+    border: 1px #3e6ce2 ;
+    border-radius: 10px;
+    width: 100px;
+    height: 40px;
+    z-index:101;
+    transition:0.5s;
+    
+   
 }
 
+#DM:hover
+{
+    background-color: #3e6ce2;
+    color: white;
+}
+
+.dark-mode-div
+{
+    position: absolute;
+    top: 27%;
+    left: 90%;
+    width: 5%;
+}
+.login-div
+{
+    position: absolute;
+    top: 27%;
+    left: 82%;
+    width: 5%;
+}
+
+.sign-up-div
+{
+    position: absolute;
+    top: 27%;
+    left: 74%;
+    width: 5%;
+}
+
+.CopyRight
+{
+    position: absolute;
+    top: 50%;
+    left: 90%;
+}
 
 .search {
     width: 100%;
     position: relative;
     display: flex;
-}
+} 
   
 .searchTerm {
-    width: 100%;
+    width: 50%;
     border: 3px solid teal;
     border-right: none;
     padding: 5px;
@@ -149,7 +248,99 @@ article{
 .wrap{
     width: 30%;
     position: absolute;
-    top: 35%;
-    left: 32%;
+    top: 52%;
+    left: 65%;
     transform: translate(-50%, -50%);
 }
+
+#nav-button
+{
+    margin: 0 50px;
+    background-color: #3e6ce2 ;
+    border: none;
+    color: white;
+    height: 35px;
+    width: 100px;
+    font-weight: bolder;
+    transition: 0.4s;
+    z-index:101;
+    
+
+}
+
+#nav-button:hover
+{
+    color:#3e6ce2 ;
+    background-color: white;
+    
+}
+
+.side-bar-button-div
+{
+    margin: 0px 5px;
+}
+
+.sidebar {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: rgb(255, 255, 255); /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+  }
+  
+  /* The sidebar links */
+  .sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #3e6ce2;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidebar a:hover {
+    color: #f1f1f1;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  /* The button used to open the sidebar */
+  .openbtn {
+    margin: 0 50px;
+    background-color: #3e6ce2 ;
+    border: none;
+    color: white;
+    height: 35px;
+    width: 100px;
+    font-weight: bolder;
+    transition: 0.4s;
+    z-index:101;
+  }
+  
+  .openbtn:hover {
+    background-color: #444;
+  }
+  
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  #main {
+    transition: margin-left .5s; /* If you want a transition effect */
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+  }

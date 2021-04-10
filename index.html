@@ -4,9 +4,14 @@
     <title>Web Project</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap" rel="stylesheet">
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-193270154-1"></script>
+    <script src="https://kit.fontawesome.com/e915f1d115.js" crossorigin="anonymous"></script>
     <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
@@ -16,30 +21,67 @@
     </script>
 </head>
 <body>
-    <button class="DM">Dark Mode</button>
-    <article>
-        <nav>
+    <header>
+        
             <div class="anaMenu">
-                <h1 style="text-align: center; margin: 15px 0px;"><b>©Logic</b></h1>
+                <h1 class="baslik" id="baslik">©Logic</h1>
             </div>
             <div class="menuDevamı">
                 <div class="wrap">
                     <div class="search">
-                    <input type="text" class="searchTerm" placeholder="What are you looking for?">
-                    <button type="submit" class="searchButton">
-                        <i class="fa fa-search"></i>
-                    </button>
+                        <input type="text" class="searchTerm" placeholder="What are you looking for?">
+                        <button type="submit" class="searchButton">
+                            <i class="fa fa-search"></i>
+                        </button>
                     </div>
                 </div>
-                
+                <div class="sign-up-div">
+                    <button class="sign-up-button" id="DM">Sign Up</i></button>
+                </div>
+                <div class="login-div">
+                    <button class="login-mode-button DM" id="DM" >Login</i></button>
+                </div>
+                <div class="dark-mode-div">
+                    <button class="dark-mode-button DM" id="DM"><i class="far fa-moon"></i></button>
+                </div>
             </div>
-        </nav>
-        <br>
-        <br>
-        <br>
+    </header>
+    <nav>
+        <div id="mySidebar" class="sidebar">
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Clients</a>
+            <a href="#">Contact</a>
+          </div>
+          
+        <div id="main">
+            <button class="openbtn" id="nav-button" onclick="toggleNav()"><i class="fas fa-bars"></i></button>
+        </div>
+        <div class="main-page-div">
+            <button class="main-page-button" id="nav-button">Ana Sayfa</button>
+        </div>
+        <div class="etkinlikler-div">
+            <button class="etkinlikler-page-button" id="nav-button">Etkinlikler</i></button>
+        </div>
+        <div class="kategoriler-div">
+            <button class="kategoriler-page-button" id="nav-button">Kategoriler</i></button>
+        </div>
+        <div class="topluluklar-div">
+            <button class="topluluklar-page-button" id="nav-button">Topluluklar</i></button>
+        </div>
+    </nav>
+    <section>   
+        <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Clients</a>
+            <a href="#">Contact</a>
+          </div>
+          
         <h1 id="head" style="color: black;">Group 2</h1>
         <div class="mid">
-            <p id="baslik" > <strong> Etkinlik izleme ve takip websitesi.</strong></p>
+            <p id="alt-alt-baslik" > <strong> Etkinlik izleme ve takip websitesi.</strong></p>
             <p id="clo">
                 by CLogic
             </p>
@@ -47,7 +89,8 @@
                 Farklı alanlardaki konferans ve yarışmaları düzenleyebilmenize, takip etmenize ve daha çok insana ulaşmanıza olanak sağlayacak bir platform.
             </p>
         </div>
-
+    </section>
+    <article> 
         <div class="altKisim">
             <div class="kolon">
                 <p><b>Poetry & the Creative Mind — Virtual Gala Supporting National Poetry Month</b></p>
@@ -63,6 +106,7 @@
             </div>
         </div>
         
+     
         <div class="altKisim">
             <div class="kolon">
                 <p><b>Barnes & Noble welcomes Barack Obama to virtually discuss A PROMISED LAND</b></p>
@@ -77,20 +121,16 @@
                 <p>Thu, Apr 1, 2021 10:00 AM +03</p>
             </div>
         </div>
-
-        <div class="footer">
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <p>© 2021 CLogic inc.</p>
-        </div>
-
     </article>
+        <footer>
+            <br>
+            <div id="nav-bilgiler">
+
+            </div>
+            <div id="copyright">
+                <p class="CopyRight">© 2021 CLogic inc.</p>
+            </div>
+        </footer>
+
 </body>
 </html>
