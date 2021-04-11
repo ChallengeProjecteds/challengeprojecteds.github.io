@@ -1,14 +1,18 @@
 function dmOnClick() {
-    const body = document.querySelector('body');
-    if(body.style.backgroundColor == 'black')
+    //navbar-dark bg-dark
+    //navbar-light bg-light
+    //btn-ligt bg-light
+    const button = document.querySelector('.dark-mode-button');
+    
+    if(button.classList.contains('bg-light')) 
     {
-        //body.style.opacity = 1;
-        body.style.removeProperty('background-color');
+        button.classList.remove('bg-light','btn-ligt');
+        button.classList.add('bg-dark','btn-dark');
     }
     else
     {
-        //body.style.opacity = 0.5;
-        body.style.backgroundColor = 'black';
+        button.classList.add('bg-light','btn-ligt');
+        button.classList.remove('bg-dark','btn-dark');
     }
     //body.style.backdrop-filter = bribrightness(0.5);
     //if(body.style.backdrop-filter)//bu özellikler çalışmıyor javascriptte
