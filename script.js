@@ -1,7 +1,4 @@
 function dmOnClick() {
-    //navbar-dark bg-dark
-    //navbar-light bg-light
-    //btn-ligt bg-light
     const button = document.querySelector('.dark-mode-button');
     const nav = document.querySelector('nav');
     
@@ -19,21 +16,6 @@ function dmOnClick() {
         nav.classList.remove('bg-light','navbar-ligt');
         nav.classList.add('bg-dark','navbar-dark');
     }
-    //body.style.backdrop-filter = bribrightness(0.5);
-    //if(body.style.backdrop-filter)//bu özellikler çalışmıyor javascriptte
 }
 const button = document.querySelector('.dark-mode-button');
 button.addEventListener('click',dmOnClick);
-
-function toggleNav() {
-    if (document.getElementById("mySidebar").style.width == "250px") {
-        document.getElementById("baslik").style.left = "0px"
-        document.getElementById("mySidebar").style.width = "0";
-        document.getElementById("main").style.marginLeft = "0";
-    } 
-    else {
-        document.getElementById("baslik").style.left = "250px";
-        document.getElementById("mySidebar").style.width = "250px";
-        document.getElementById("main").style.marginLeft = "250px";
-    }
-}
