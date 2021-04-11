@@ -12,6 +12,10 @@ body {
     height: 1100px;
     background-blend-mode: hard-light;
 }
+
+a{
+    color: ivory !important;
+}
 .baslik
 {
     color: #3e6ce2;
@@ -28,6 +32,10 @@ body {
 }
 p{
     margin: auto;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 p#clo{
@@ -173,8 +181,6 @@ article{
     height: 40px;
     z-index:101;
     transition:0.5s;
-    
-   
 }
 
 #DM:hover
@@ -190,6 +196,7 @@ article{
     left: 90%;
     width: 5%;
 }
+
 .login-div
 {
     position: absolute;
@@ -346,3 +353,4 @@ article{
     .sidebar {padding-top: 15px;}
     .sidebar a {font-size: 18px;}
   }
+
