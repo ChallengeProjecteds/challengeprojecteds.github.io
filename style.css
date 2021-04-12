@@ -110,3 +110,19 @@ p#clo{
 {
     margin: 0px 5px;
 }
+
+.about-text
+{
+    font-size: 18px;
+    text-align: center;
+}
+
+.card {
+    margin: 0 auto; /* Added */
+    float: none; /* Added */
+    margin-bottom: 10px; /* Added */
+}
+
+.card-text{
+    text-align: center;
+}

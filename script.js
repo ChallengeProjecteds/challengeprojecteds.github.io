@@ -15,6 +15,7 @@ function dmOnClick() {
         button.classList.remove('bg-dark','btn-dark');
         nav.classList.remove('bg-light','navbar-ligt');
         nav.classList.add('bg-dark','navbar-dark');
+        
     }
 }
 const button = document.querySelector('.dark-mode-button');
