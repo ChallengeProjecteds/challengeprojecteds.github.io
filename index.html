@@ -2,6 +2,7 @@
 <html>
 
 <head>
+    <!--Gerekli Bağlantılar ve CSS ile JS bağlanması. -->
     <title>Web Project</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
@@ -9,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
@@ -27,9 +29,9 @@
 
 <body>
     <header class="fixed-top">
-        <!--menü başlangıcı-->
+        <!--Nav başlangıcı-->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="index.html">
                 <h1 class="baslik" id="baslik">©Logic</h1>
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -60,16 +62,18 @@
                 </form>
             </div>
         </nav>
+
+        <!--Nav Buttons-->
         <ul class="nav nav-pills bg-primary">
             <li class="nav-item">
                 <a class="nav-link" href="#">Ana Sayfa</a>
             </li>
-            <!--<li class="nav-item">
+            <li class="nav-item">
                 <a class="nav-link" href="#kategori">Kategoriler</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#hakkimizda">Topluluklar</a>
-            </li> -->
+                <a class="nav-link" href="#topluluk">Topluluklar</a>
+            </li>
             <li class="nav-item">
                 <a class="nav-link" href="#hakkimizda">Hakkımızda</a>
             </li>
@@ -82,14 +86,16 @@
     <!--menü bitişi-->
 
     <section>
+        <!--Section başlığı-->
         <div class="col-lg-12 jumbotron jumbotron-fluid">
             <div class="container">
-                <h1 class="display-4 text-center">Merhabalar</h1>
+                <h1 class="display-4 text-center">Merhaba</h1>
                 <p class="lead" style="text-align: center;">Hayat fırsatlarla dolu bir yolculuk. Sen de bu yolculuğa
                     katıl.</p>
             </div>
         </div>
 
+        <!--Asıl gövde başlangıcı-->
         <div class="col-lg-12 text-center">
             <p class="h2">
                 by CLogic
@@ -99,35 +105,28 @@
                 ulaşmanıza olanak sağlayacak bir platform.
             </p>
         </div>
-        <div class="container bg-secondary">
+        <!--Gövde kısmı, etkinlikler,topluluk ve kategori card'ları burada bulunmaktadır.-->
+        <div class="container bg-info">
             <div class="row">
-
+                <!--Etkinlik slider'ı (carousel)-->
                 <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
                     <br><br>
                     <h1 style="text-align: center;">Etkinlikler</h1>
                     <hr>
-                    <!--Controls-->
+                    <!--slider butonları-->
                     <div class="controls-top">
                         <p style="text-align: center;">
-                            <a class="btn-floating" href="#multi-item-example" data-slide="prev"><i
+                            <a class="btn-floating text-dark" href="#multi-item-example" data-slide="prev"><i
                                     class="fas fa-chevron-left"></i></a>
-                            <a class="btn-floating" href="#multi-item-example" data-slide="next"><i
+                            <a class="btn-floating text-dark" href="#multi-item-example" data-slide="next"><i
                                     class="fas fa-chevron-right"></i></a>
                         </p>
                     </div>
-                    <!--/.Controls-->
 
-                    <!--Indicators-->
-                    <ol class="carousel-indicators">
-                        <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
-                        <li data-target="#multi-item-example" data-slide-to="1"></li>
-                    </ol>
-                    <!--/.Indicators-->
 
-                    <!--Slides-->
+
+                    <!--Slider 1-->
                     <div class="carousel-inner" role="listbox">
-
-                        <!--First slide-->
                         <div class="carousel-item active">
 
                             <div class="col-lg-4 col-md-6 col-sm-12 p-2" style="float: left;">
@@ -197,9 +196,9 @@
                             </div>
 
                         </div>
-                        <!--/.First slide-->
 
-                        <!--Second slide-->
+
+                        <!--Slider 2-->
                         <div class="carousel-item">
 
                             <div class="col-lg-4 col-md-6 col-sm-12 p-2" style="float: left;">
@@ -269,157 +268,125 @@
                             </div>
 
                         </div>
-                        <!--/.Second slide-->
-
-
-
                     </div>
-                    <!--/.Slides-->
+
 
                 </div>
-                <!--/.Carousel Wrapper-->
-                <!--
+                <!--Kategoriler bloğu-->
                 <div class="col-lg-12">
                     <br><br>
                     <div id="kategori" class="navbarSpace"></div>
+                    <br><br>
                     <h1 style="text-align: center;">Kategoriler</h1>
                     <hr>
                 </div>
+                <!--Kategori kartları-->
                 <div class="card-columns m-5">
                     <div class="card m-2 p-5">
-                        <img class="card-img-top" src="bird_logo.png" alt="Card image">
-                        <p class="card-text">Gastronomi</p>
+                        <a href="etkinlikler.html">
+                            <img class="card-img-top" src="bird_logo.png" alt="Card image">
+                            <p class="card-text" id="topluluk-card-text">Gastronomi</p>
+                        </a>
                     </div>
                     <div class="card m-2 p-5">
-                        <img class="card-img-top" src="bird_logo.png" alt="Card image">
-                        <p class="card-text">Spor.</p>
+                        <a href="etkinlikler.html">
+                            <img class="card-img-top" src="bird_logo.png" alt="Card image">
+                            <p class="card-text" id="topluluk-card-text">Spor</p>
+                        </a>
                     </div>
                     <div class="card m-2 p-5">
-                        <img class="card-img-top" src="bird_logo.png" alt="Card image">
-                        <p class="card-text">Eğitim</p>
+                        <a href="etkinlikler.html">
+                            <img class="card-img-top" src="bird_logo.png" alt="Card image">
+                            <p class="card-text" id="topluluk-card-text">Eğitim</p>
+                        </a>
                     </div>
                     <div class="card m-2 p-5">
-                        <img class="card-img-top" src="bird_logo.png" alt="Card image">
-                        <p class="card-text">Kişisel Gelişim</p>
+                        <a href="etkinlikler.html">
+                            <img class="card-img-top" src="bird_logo.png" alt="Card image">
+                            <p class="card-text" id="topluluk-card-text">Kişisel Gelişim</p>
+                        </a>
                     </div>
                     <div class="card m-2 p-5">
-                        <img class="card-img-top" src="bird_logo.png" alt="Card image">
-                        <p class="card-text">Bilişim</p>
+                        <a href="etkinlikler.html">
+                            <img class="card-img-top" src="bird_logo.png" alt="Card image">
+                            <p class="card-text" id="topluluk-card-text">Bilişim</p>
+                        </a>
                     </div>
                     <div class="card m-2 p-5">
-                        <img class="card-img-top" src="bird_logo.png" alt="Card image">
-                        <p class="card-text">Edebiyat</p>
-                    </div>
-                    <div class="card m-2 p-5">
-                        <img class="card-img-top" src="bird_logo.png" alt="Card image">
-                        <p class="card-text">Siyaset</p>
-                    </div>
-                    <div class="card m-2 p-5">
-                        <img class="card-img-top" src="bird_logo.png" alt="Card image">
-                        <p class="card-text">Fotoğrafçılık</p>
-                    </div>
-                    <div class="card m-2 p-5">
-                        <img class="card-img-top" src="bird_logo.png" alt="Card image">
-                        <p class="card-text">Müzik</p>
+                        <a href="etkinlikler.html">
+                            <img class="card-img-top" src="bird_logo.png" alt="Card image">
+                            <p class="card-text" id="topluluk-card-text">Fotoğrafçılık</p>
+                        </a>
                     </div>
                 </div>
-                 -->   
-                
-                <!--
-                <div class="row mx-auto">
-                    
-                    <div class="card col-lg-3 col-md-6 col-sm-12 p-2 mx-auto" style="float: left;">
-                        <img class="card-img-top" src="bird_logo.png" alt="Card image">
-                        <p class="card-text">Spor.</p>   
-                    </div>
-                    <div class="card col-lg-3 col-md-6 col-sm-12 p-2 mx-auto" style="float: left;">
-                        <img class="card-img-top" src="bird_logo.png" alt="Card image">
-                        <p class="card-text">Kişisel Gelişim.</p>   
-                    </div>
-                    <div class="card col-lg-3 col-md-6 col-sm-12 p-2 mx-auto" style="float: left;">
-                        <img class="card-img-top" src="bird_logo.png" alt="Card image">
-                        <p class="card-text">Mühendislik.</p>   
-                    </div>
-                    <div class="card col-lg-3 col-md-6 col-sm-12 p-2 mx-auto" style="float: left;">
-                        <img class="card-img-top" src="bird_logo.png" alt="Card image">
-                        <p class="card-text">Eğlence-Oyun.</p>   
-                    </div>
-                    <div class="card col-lg-3 col-md-6 col-sm-12 p-2 mx-auto" style="float: left;">
-                        <img class="card-img-top" src="bird_logo.png" alt="Card image">
-                        <p class="card-text">Sağlık.</p>   
-                    </div>
-                    <div class="card col-lg-3 col-md-6 col-sm-12 p-2 mx-auto" style="float: left;">
-                        <img class="card-img-top" src="bird_logo.png" alt="Card image">
-                        <p class="card-text">Fotoğrafçılık.</p>   
-                    </div>
-                    <div class="card col-lg-3 col-md-6 col-sm-12 p-2 mx-auto" style="float: left;">
-                        <img class="card-img-top" src="bird_logo.png" alt="Card image">
-                        <p class="card-text">Müzik.</p>   
-                    </div>
+                <!--Topluluk kartları.-->
+                <div class="col-lg-12">
+                    <br><br>
+                    <div id="topluluk" class="navbarSpace"></div>
+                    <br><br>
+                    <h1 style="text-align: center;">Sevebileceğin Topluluklar</h1>
+                    <hr>
+                    <br><br>
                 </div>
-                -->
-                <!--
-                <div class="col-lg-4 col-md-6 col-sm-12 p-2">
-                    <div class="card h-100">
-                        <div class="card-body d-flex flex-column">
-                            <h5 class="card-title">Şiir ve Yaratıcı Zihin - Ulusal Şiir Ayını Destekleyen Sanal Gala</h5>
-                            <p class="card-text">Cuma, Nisan 30, 2021 2:30 ÖS +03</p>
-                            <a href="#" class="btn btn-primary mt-auto">Link Bozuk</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 p-2">
-                    <div class="card h-100">
-                        <div class="card-body d-flex flex-column">
-                            <h5 class="card-title">Yeni Başlayanlar İçin Vegan</h5>
-                            <p class="card-text">Pazar, Nisan 18, 2021 12:00 ÖÖ +03</p>
-                            <a href="#" class="btn btn-primary mt-auto">Link Bozuk</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 p-2">
-                    <div class="card h-100">
-                        <div class="card-body d-flex flex-column">
-                            <h5 class="card-title">2. Yıllık Ulusal Irkçılık Karşıtı Kitap Festivali</h5>
-                            <p class="card-text">Cumartesi, Nisan 24, 2021 4:00 ÖS +03</p>
-                            <a href="#" class="btn btn-primary mt-auto">Link Bozuk</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 p-2">
-                    <div class="card h-100">
-                        <div class="card-body d-flex flex-column">
-                            <h5 class="card-title">Barnes & Noble, Barack Obama'yı SÖZ EDİLEN BİR ARAZİ sanal olarak tartışmak için ağırlıyor</h5>
-                            <p class="card-text">Salı, Mart 30, 2021 2:00 ÖÖ +03</p>
-                            <a href="#" class="btn btn-primary mt-auto">Link Bozuk</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 p-2">
-                    <div class="card h-100">
-                        <div class="card-body d-flex flex-column">
-                            <h5 class="card-title">48 saatlik Azıcık Farkındalık</h5>
-                            <p class="card-text">Cumartesi, Nisan 3, 2021 11:00 ÖÖ +03</p>
-                            <a href="#" class="btn btn-primary mt-auto">Link Bozuk</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 p-2">
-                    <div class="card h-100">
-                        <div class="card-body d-flex flex-column">
-                            <h5 class="card-title">Les RH hackent le digital - Baskı 2021</h5>
-                            <p class="card-text">Perşembe, Nisan 1, 2021 10:00 ÖÖ +03</p>
-                            <a href="#" class="btn btn-primary mt-auto">Link Bozuk</a>
-                        </div>
-                    </div>
-                </div>
-                -->
 
+                <div>
+                    <div class="col-md-3" style="float:left">
+                        <div class="card mb-2">
+                            <a href="topluluk.html">
+                                <img class="card-img-top" src="owl_logo.png" alt="Card image cap"></a>
+                            <div class="card-body">
+                                <a href="topluluk.html">
+                                    <h4 style="text-align: center;" class="card-title">Topluluk 1</h4>
+                                </a>
+                                <p class="card-text">Topluluğun kısa bir açıklaması.</p>
+                            </div>
+                        </div>
+                    </div>
 
+                    <div class="col-md-3" style="float:left">
+                        <div class="card mb-2">
+                            <a href="topluluk.html">
+                                <img class="card-img-top" src="owl_logo.png" alt="Card image cap"></a>
+                            <div class="card-body">
+                                <a href="topluluk.html">
+                                    <h4 style="text-align: center;" class="card-title">Topluluk 2</h4>
+                                </a>
+                                <p class="card-text">Topluluğun kısa bir açıklaması.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3" style="float:left">
+                        <div class="card mb-2">
+                            <a href="topluluk.html">
+                                <img class="card-img-top" src="owl_logo.png" alt="Card image cap"></a>
+                            <div class="card-body">
+                                <a href="topluluk.html">
+                                    <h4 style="text-align: center;" class="card-title">Topluluk 3</h4>
+                                </a>
+                                <p class="card-text">Topluluğun kısa bir açıklaması.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3" style="float:left">
+                        <div class="card mb-2">
+                            <a href="topluluk.html">
+                                <img class="card-img-top" src="owl_logo.png" alt="Card image cap"></a>
+                            <div class="card-body">
+                                <a href="topluluk.html">
+                                    <h4 style="text-align: center;" class="card-title">Topluluk 4</h4>
+                                </a>
+                                <p class="card-text">Topluluğun kısa bir açıklaması.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Hakkımızda bloğu-->
                 <div id="hakkimizda" class="navbarSpace"></div>
                 <div class="col-lg-12">
 
-                    <br>
+                    <br><br><br>
                     <h1 style="text-align: center;">Hakkımızda</h1>
                     <hr>
                     <p class="about-text">
@@ -442,10 +409,9 @@
 
     <div id="iletisim" class="navbarSpace"></div>
 
+    <!--footer ve iletişim kısmı-->
     <footer class="text-center text-white">
-        <!-- Grid container -->
         <div class="container p-4 pb-0 bg-primary">
-            <!-- Section: Social media -->
             <section class="mb-4">
                 <!-- Facebook -->
                 <a class="btn btn-primary btn-floating m-1" style="background-color: #3b5998;" href="#!"
@@ -469,19 +435,19 @@
                 <!-- Github -->
                 <a class="btn btn-primary btn-floating m-1" style="background-color: #333333;" href="#!"
                     role="button"><i class="fab fa-github"></i></a>
+                <!--Email-->
+                <a class="btn btn-primary btn-floating m-1" style="background-color: #ca480b;" href="#!"
+                    role="button"><i class="fas fa-envelope-open"></i></i></a>
             </section>
-            <!-- Section: Social media -->
         </div>
-        <!-- Grid container -->
-
-        <!-- Copyright -->
+        <!--Copy right kısmı.-->
         <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
             © 2021 Copyright:
             <a class="text-white" href="#!">©Logic</a>
         </div>
-        <!-- Copyright -->
-    </footer>
 
+    </footer>
+    <!--Gereken scriptler-->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>

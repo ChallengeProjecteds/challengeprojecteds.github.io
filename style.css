@@ -126,3 +126,9 @@ p#clo{
 .card-text{
     text-align: center;
 }
+
+
+#topluluk-card-text{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: large;
+}
