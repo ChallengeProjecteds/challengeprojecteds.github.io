@@ -2,6 +2,7 @@ function dmOnClick() {
     const button = document.querySelector('.dark-mode-button');
     const nav = document.querySelector('nav');
     const header = document.querySelector('header');
+    const body = document.querySelector('body');
     
     if(button.classList.contains('bg-light')) 
     {
@@ -11,6 +12,7 @@ function dmOnClick() {
         nav.classList.remove('bg-dark','navbar-dark');
         header.classList.add('bg-light','navbar-ligt');
         header.classList.remove('bg-dark','navbar-dark');
+        body.style.backgroundColor = "#f8f9fa";
     }
     else
     {
@@ -20,8 +22,7 @@ function dmOnClick() {
         nav.classList.add('bg-dark','navbar-dark');
         header.classList.remove('bg-light','navbar-ligt');
         header.classList.add('bg-dark','navbar-dark');
-        
-        
+        body.style.backgroundColor = "#343a40";
     }
 }
 const button = document.querySelector('.dark-mode-button');
